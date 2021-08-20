@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.Header {
+  text-align: center;
+  border-bottom: 5px double rgb(238, 237, 237);
+  padding: 20px 0;
+}
+
+.Header p {
+  font-size: 0.9rem;
+}
+
+/* .Intro { */
+.IntroImg {
+  position: relative;
+}
+
+.Intro .IntroText {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.Intro img {
+  border: 5px solid rgb(226, 206, 151);
+  border-radius: 3px;
+}
+
+.ImageCaption {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  color: #fff;
+  background-color: rgb(26, 25, 25);
+  font-size: 0.75rem;
+  padding: 5px;
+}
+
+.Ingredients ul {
+  line-height: 1.4;
+}
+
+.Method ol {
+  line-height: 1.4;
+}
+
+.Method li::after {
+  content: '✼';
+  display: block;
+  text-align: center;
+  margin: 5px 0;
+  color: rgb(216, 209, 209);
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    margin: 0 auto;
+    width: 60rem;
+    padding: 0 30px;
+    border-left: 5px solid rgb(241, 239, 239);
+    border-right: 5px solid rgb(241, 239, 239);
+  }
+
+  .Intro {
+    display: flex;
+  }
+
+  .Intro .IntroText {
+    font-size: 2.3rem;
+    line-height: 1.4;
+    margin-right: 20px;
+  }
+
+  .Ingredients {
+    float: right;
+    font-size: 1rem;
+    border: 2px solid rgb(201, 159, 97);
+    border-radius: 3px;
+    background-color: rgb(253, 253, 197);
+    padding: 10px;
+  }
+
+  .ImageCaption {
+    position: absolute;
+    bottom: 3rem;
+    right: 1rem;
+    /* color: #fff;
+    background-color: rgb(26, 25, 25);
+    font-size: 0.75rem;
+    padding: 5px; */
+  }
+}
