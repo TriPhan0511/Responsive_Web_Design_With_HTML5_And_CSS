@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding video and audio in HTML</title>
+  </head>
+  <body>
+    <!-- Adding video and audio in HTML -->
+    <!-- <video
+      src="video_audio/Xe_Dap_Oi.mp4"
+      width="640"
+      height="480"
+      controls
+      preload="auto"
+      loop
+      poster="img/Xe_Dap_Oi_Poster.png"
+    >
+      If you're reading this either the video didn't load or your browser is way old!
+    </video> -->
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <!-- Providing alternate media source -->
+    <!-- 
+      The <source> tag enables us to provide alternate sources for media. For example,
+      alongside providing an MP4 version of a video, if we wanted to provide support
+      for a new format, we could easily do so. Furthermore, if the user didn't have any
+      suitable playback technology in the browser, we could provide download links to
+      the files themselves. Here's an example:
+     -->
+
+    <!-- 
+      <video width="640" height="480" controls preload="auto" loop poster="myVideoPoster.png">
+      <source src="myVideo.sp8" type="video/super8" />
+      <source src="myVideo.mp4" type="video/mp4" />
+      <p><b>Download Video: </b>Mp4 Format: <a href="myVideo.mp4">MP4</a></p>
+    </video>
+     -->
+
+    <!-- 
+       In that case, we first specified the source of a made-up video format called super8.
+       The browser goes top to bottom deciding waht to play, so if it doesn't support
+       super8, it moves on to the next source, mp4 in this case. And on and on it goes,
+       moving down to the download link if it can;t reconcile any of the source listed.
+       The type attribute tells the browser the MIME type of the resource. If you fail to
+       specify this, the browser will fetch the content and try to play it anyway. But if
+       you know the MIME type, you should add it in the type attribute
+      -->
+
+    <!-- -------------------------------------------------------------------------------------- -->
+
+    <!-- Audio and video tags work alomost identically -->
+    <!-- 
+      The <audio> tag works on the same principle as the <video> tag, with the same
+      attributes (excluding width, height, and poster). The main difference between 
+      the two is the fact that <audio> has no playback area for visible content.
+     -->
+  </body>
+</html>

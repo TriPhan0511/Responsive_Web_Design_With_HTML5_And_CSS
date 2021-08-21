@@ -40,7 +40,8 @@ img {
 .ImageCaption {
   font-size: 0.75rem;
   position: absolute;
-  bottom: 0.5rem;
+  /* bottom: 0.5rem; */
+  bottom: 1rem;
   right: 1rem;
   padding: 3px;
   background-color: #222;
