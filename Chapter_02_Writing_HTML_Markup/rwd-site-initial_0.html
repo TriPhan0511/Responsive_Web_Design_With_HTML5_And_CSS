@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RWD</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="rwd-Logo">
+        <span class="rwd-Logo_Main">RWD</span>
+        <span class="rwd-Logo_Secondary">EDUCATION</span>
+      </a>
+      <nav class="rwd-Nav">
+        <a href="#about" class="rwd-Nav_Link">About</a>
+        <a href="#reviews" class="rwd-Nav_Link">Reviews</a>
+        <a href="#chapters" class="rwd-Nav_Link">Chapter List</a>
+        <a href="#buy" class="rwd-Nav_Link">Buy</a>
+      </nav>
+
+      <!-- 
+        Use a button because this will open a small box so the user can choose code from the second or third edition of the book.
+        Note that a <button> needs a type of button otherwise browsers default to thinking it is a submit button.
+        This can sometimes cause buggy behavior.  
+       -->
+      <button type="button" class="rwd-Nav_Link">Code</button>
+      <div class="rwd-DownloadPanel">
+        <p class="rwd-DownloadPanel_Title">Download Code</p>
+        <div class="rwd-DownloadPanel_Links">
+          <a href="RWD2E_download.zip" class="rwd-DownloadPanel_Link">2nd Edition</a>
+          <a href="RWD3E_download.zip" class="rwd-DownloadPanel_Link">3rd Edition</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="rwd-Hero">
+        <img
+          src="img/ResponsiveWebDesign_BenFrain_Cover_350.jpg"
+          alt="Book cover of Responsive Web Design with HTML5 and CSS by Ben Frain"
+          class="rwd-Hero_Cover"
+        />
+        <div class="rwd-Hero_TitleAndIntro">
+          <h1 class="rwd-Hero_Title">
+            Responsive Web Design <span class="rwd-Hero_TextGroup"><i>with</i>HTML5</span
+            ><span class="rwd-Hero_TextGroup"><i>and</i>CSS3</span
+            ><span class="rwd-Hero_Edition">3rd Edition</span>
+          </h1>
+          <p class="rwd-Hero_Description">
+            Since 2012, 'Responsive Web Design with HTML5 and CSS' by Ben Frain, has been Pact
+            publishing's best-selling book on Responsive Web Design and the latest HTML and CSS
+            techniques and features. Now completely updated 3rd Edition for 2020!
+          </p>
+          <a href="#new" class="rwd-Hero_JumpLink">What's new in the 3rd Edition?</a>
+        </div>
+      </section>
+      <section id="about" class="rwd-About">
+        <div class="rwd-About_Minor">
+          <h5 class="rwd-About_MinorTitle">300+ Info Packed Pages</h5>
+          <p>
+            Media queries, SVG, animation, CSS transforms, accessibility, Flexbox, CSS Grid, CSS
+            Scroll Snap and much, much more.
+          </p>
+        </div>
+        <div class="rwd-About_Minor">
+          <h5 class="rwd-About_MinorTitle">Sample Code</h5>
+          <p>
+            Chapter code is available for each subject and you also get the code for this site.
+            You'll be building it bit by bit as we progress!
+          </p>
+        </div>
+        <div class="rwd-About_Minor">
+          <h5 class="rwd-About_MinorTitle">Latest Edition</h5>
+          <p>The 3rd Edition of Packt's best-selling Responsive Web Design title since 2012.</p>
+        </div>
+        <div class="rwd-About_Major">
+          <h5 class="rwd-About_MajorTitle">Is it for you?</h5>
+          <p>
+            This isn't a book for absolute beginners; you should have some understanding of HTML and
+            CSS.
+          </p>
+          <p>
+            We will taking this example site from nothing more than high quality HTML markup to
+            fully responsive progressively enhanced website using the latest HTML techniques.
+          </p>
+        </div>
+        <div class="rwd-About_Major">
+          <h5 class="rwd-About_MajorTitle">What will you learn</h5>
+          <p>
+            Each chapter will teach you the essentials of that subject, before putting the lessons
+            learnt into praticet to build this very site!
+          </p>
+          <p>
+            You'll learn everything you need to build fully responsive, modern web sites using the
+            latest CSS and HTML features. Still unsure?
+          </p>
+          <a href="#chapters">Read the chapter summary below.</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
